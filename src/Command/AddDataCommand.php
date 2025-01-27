@@ -16,7 +16,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 )]
 class AddDataCommand extends Command
 {
-    protected static $defaultName = 'app:add-data';
+    protected static   $defaultName = 'app:add-data';
     private EntityManagerInterface $entityManager;
 
     public function __construct(EntityManagerInterface $entityManager)
@@ -33,7 +33,6 @@ class AddDataCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        // Créer un bâtiment
         $building = new Building();
         $building->setNom('Building A');
         $building->setAdresse('123 Main Street');

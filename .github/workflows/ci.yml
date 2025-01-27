@@ -32,7 +32,7 @@ jobs:
 
       - name: Run PHPStan
         run: |
-          vendor/bin/phpstan analyse --level= 6 src 
+          vendor/bin/phpstan analyse --level=max src 
 
 
       - name: Run PHP_CodeSniffer

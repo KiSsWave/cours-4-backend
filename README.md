@@ -24,7 +24,7 @@ Il faut respecter une de ces deux conditions:
 Il suffi d'installer les depandance via composer
 
 ```bash
-docker composer run --rm php composer install
+docker compose run --rm php composer install
 ```
 
 ou sans docker
